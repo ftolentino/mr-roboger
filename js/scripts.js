@@ -5,6 +5,13 @@ function takeNumber(userNum) {
 
   if(countTo > 0) {
     for (let index = 0; index <= countTo; index += 1) {
+      if(index === 1) {
+        console.log('Beep!');
+      } else if (index === 2) {
+        console.log('Boop!')
+      } else if (index === 3) {
+        console.log(`Won't you be my neighbor!`);
+      } else console.log(index);
       result.push(index)
     }
   }
@@ -19,6 +26,6 @@ $(document).ready(function() {
     event.preventDefault();
     let inputNumber = $('#numberInput').val();
 
-    $('#output').show().text(takeNumber(inputNumber));
+    $('#output').show().html(takeNumber(inputNumber)); 
   });
 });

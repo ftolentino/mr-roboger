@@ -60,22 +60,28 @@ N/A
 ```
 Description: takeNumber();
 
-Test: Take the input number, split it into an array, console.log() the array variable to confirm there is connection between UI logic and Business Logic.
+Test1: Take the input number, split it into an array, console.log() the array variable to confirm there is connection between UI logic and Business Logic.
 Code:
 function takeNumber(inputNum) {}
 const inputNumArray = inputNum.split(" ");
-console.log(inputNumArray);
-return inputNumArray;
-Expected Output: the user's number input
+takeNumber(5);
+Expected Output: the user's number input, 5.
 
-Test: Take input number and return a range of numbers from 0 to the user inputted number
+Test2: Take input number and return a range of numbers from 0 to the user inputted number
 Code:
 let result = [];
 const countTo = parseInt(userNum);
 for (let index = 0; index <= countTo; index += 1) {}
-result.push(index);
-return result.toString();
-Expected Output: takeNumber(5); // 0,1,2,3,4,5 
+takeNumber(5);
+Expected Output: 0,1,2,3,4,5
+
+Test3: Numbers 1, 2, 3 are replaced with assigned string, console.log() each condition
+Code:
+if(index === 1)
+else if (index === 2)
+else if (index === 3) 
+takeNumber(11);
+Expected Output: 0,Beep!,Boop!,Won't you be my neighbor!,4,5,6,7,8,9,10,11
 
 ```
 
