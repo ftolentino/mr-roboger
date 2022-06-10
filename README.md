@@ -58,6 +58,14 @@ N/A
 ## Specs
 
 ```
+Description: takeNumber();
+Test: Take the user input number, split it into an array, console.log() the array variable to confirm there is connection between UI logic and Business Logic.
+Code:
+function takeNumber(inputNum) {}
+const inputNumArray = inputNum.split(" ");
+console.log(inputNumArray);
+return inputNumArray;
+Expected Output: the user's number input
 
 ```
 
