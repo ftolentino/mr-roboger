@@ -59,13 +59,23 @@ N/A
 
 ```
 Description: takeNumber();
-Test: Take the user input number, split it into an array, console.log() the array variable to confirm there is connection between UI logic and Business Logic.
+
+Test: Take the input number, split it into an array, console.log() the array variable to confirm there is connection between UI logic and Business Logic.
 Code:
 function takeNumber(inputNum) {}
 const inputNumArray = inputNum.split(" ");
 console.log(inputNumArray);
 return inputNumArray;
 Expected Output: the user's number input
+
+Test: Take input number and return a range of numbers from 0 to the user inputted number
+Code:
+let result = [];
+const countTo = parseInt(userNum);
+for (let index = 0; index <= countTo; index += 1) {}
+result.push(index);
+return result.toString();
+Expected Output: takeNumber(5); // 0,1,2,3,4,5 
 
 ```
 

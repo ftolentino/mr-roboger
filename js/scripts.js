@@ -1,8 +1,15 @@
 // Business Logic
-function takeNumber(inputNum) {
-  const inputNumArray = inputNum.split(" ");
-  console.log(inputNumArray);
-  return inputNumArray;
+function takeNumber(userNum) {
+  let result = [];
+  const countTo = parseInt(userNum);
+
+  if(countTo > 0) {
+    for (let index = 0; index <= countTo; index += 1) {
+      result.push(index)
+    }
+  }
+  // const inputNumArray = userNum.split(" ");
+  return result.toString();
 }
 
 
