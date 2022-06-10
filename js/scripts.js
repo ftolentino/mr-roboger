@@ -1,22 +1,30 @@
 // Business Logic
 function takeNumber(userNum) {
-  let result = [];
+  let numberArray = [];
   const countTo = parseInt(userNum);
 
   if(countTo > 0) {
     for (let index = 0; index <= countTo; index += 1) {
-      if(index === 1) {
-        console.log('Beep!');
-      } else if (index === 2) {
-        console.log('Boop!')
-      } else if (index === 3) {
-        console.log(`Won't you be my neighbor!`);
-      } else console.log(index);
-      result.push(index)
-    }
+      numberArray.push(index);
+    }  
   }
-  // const inputNumArray = userNum.split(" ");
-  return result.toString();
+  return numberArray;
+}
+
+function replaceNumber() {
+  let roboArray = takeNumber(5);
+  console.log(roboArray);
+  // let counter = -1;
+  // result.forEach(function(element) {
+  //   counter++;
+  //   if(index == '1') {
+  //     console.log('Beep!');
+  //   } else if (index === 2) {
+  //     console.log('Boop!')
+  //   } else if (index === 3) {
+  //     console.log(`Won't you be my neighbor!`);
+  //   } else console.log(index);
+  // });
 }
 
 
@@ -29,3 +37,4 @@ $(document).ready(function() {
     $('#output').show().html(takeNumber(inputNumber)); 
   });
 });
+
