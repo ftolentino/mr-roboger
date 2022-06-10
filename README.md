@@ -55,7 +55,7 @@ _Create a web application that takes a number from the user and returns a range 
 ## Known Bugs
 N/A
 
-## TDD
+## Specs
 
 ```
 
