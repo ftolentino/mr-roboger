@@ -84,12 +84,18 @@ takeNumber(11);
 Expected Output: 0,Beep!,Boop!,Won't you be my neighbor!,4,5,6,7,8,9,10,11
 
 
-Description replaceNumber();
+Description arrayReplace();
 Test1: Create a new array variable and assign takeNumber function
 Code:
 let roboArray = takeNumber(5);
 console.log(roboArray)
 Expected Output: [0,1,2,3,4,5]
+
+Test2: Function takes an array parameter as an argument, loops through the array length. Replaces number 1 with Beep!, 2 with Boop!, 3 with Won't you be my neighbor?
+Code:
+arrayReplace(arr);
+arrayReplace(inputArray);
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6
 
 ```
 
