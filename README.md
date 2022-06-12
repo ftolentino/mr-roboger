@@ -97,6 +97,19 @@ arrayReplace(arr);
 arrayReplace(inputArray);
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6
 
+Test3: If a user inputs a 14, the program should display a list of values starting with 0 to the user's inputted number, with the numbers 1, 2, 3, 10, 11, 12, 13 and 14 substituted with the correct phrase.
+Code:
+arrayReplace(inputArray);
+Expected Output: "0", "Beep", "Boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop", "Won't you be my neighbor?", "Beep!"
+
+Test4: Use regex to replace all 1's in the stringArray with 'Beep!'
+Code:
+const arrayOfStr = newArray.map();
+const stringArray = arrayOfStr.toString();
+const stringArrReplace = stringArray.replaceAll(/[1]/g, 'Beep!');
+Expected Output: 11, 0,Beep!,2,3,4,5,6,7,8,9,Beep!0,Beep!Beep!
+
+
 ```
 
 ## License
