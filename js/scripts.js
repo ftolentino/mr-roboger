@@ -13,15 +13,31 @@ function countTo(userNum) {
 
 function arrayReplace(arr) {
   let newArray = []
+  let roboArray = []
   newArray = arr;
   const arrayOfStr = newArray.map(num => {
     return String(num);
   });
-  const stringArray = arrayOfStr.toString();
+  // const stringArray = arrayOfStr.toString();
 
-  const stringArrReplace = stringArray.replaceAll(/[1]/g, 'Beep!');
-  console.log(stringArrReplace);
-  return stringArrReplace;
+  // const stringArrReplace = stringArray.replaceAll(/[1]/g, 'Beep!');
+  // console.log(stringArrReplace);
+  arrayOfStr.forEach(function(index) {
+    if(arrayOfStr[index].includes(1) && arrayOfStr[index] > 0 ) {
+      console.log('Beep!');
+      arrayOfStr[index] = 'Beep!';
+    } else if (arrayOfStr[index].includes(2) && arrayOfStr[index] > 0) {
+      console.log('Boop!')
+      arrayOfStr[index] = 'Boop!';
+    } else if (arrayOfStr[index].includes(3) && arrayOfStr[index] > 0) {
+      console.log(`Won't you be my neighbor?`);
+      arrayOfStr[index] = `Won't you be my neighbor?`
+    } 
+    roboArray.push(arrayOfStr[index]);
+  });
+  console.log(roboArray);
+
+  return roboArray.join(', ');
 }
 
 // UI Logic

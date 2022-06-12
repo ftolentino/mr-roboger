@@ -109,6 +109,14 @@ const stringArray = arrayOfStr.toString();
 const stringArrReplace = stringArray.replaceAll(/[1]/g, 'Beep!');
 Expected Output: 11, 0,Beep!,2,3,4,5,6,7,8,9,Beep!0,Beep!Beep!
 
+Test5: Try forEach loop again. This time on arrayOfStr(which converts the array of numbers into an array of string numbers). Use branching to check if each element includes 1, 2, or 3 as the first digit.
+Code:
+let roboArray = [];
+arrayOfStr.forEach(function(index) {...});
+arrayReplace(30)
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Beep!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Won't you be my neighbor?
+
+
 
 ```
 
