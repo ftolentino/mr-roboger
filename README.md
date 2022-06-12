@@ -116,6 +116,12 @@ arrayOfStr.forEach(function(index) {...});
 arrayReplace(30)
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Beep!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Won't you be my neighbor?
 
+Test6: arrayReplace branching should return hiearchy of substitution i.e 13 should return 'Won't you be my neighbor?'
+Code:
+arrayReplace(30);
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, Won't you be my neighbor?, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Won't you be my neighbor?
+
+
 
 
 ```
