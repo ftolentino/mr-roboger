@@ -11,34 +11,26 @@ function takeNumber(userNum) {
   return numberArray;
 }
 
-// function arrayReplace(arr, old_value, new_value ) {
-//   let newArray = [];
-//   console.log(roboArray);
-//   roboArray.forEach(function(index) {
-//     if(index == '1') {
-//       console.log('Beep!');
-//     } else if (index === 2) {
-//       console.log('Boop!')
-//     } else if (index === 3) {
-//       console.log(`Won't you be my neighbor!`);
-//     } else {
-//      console.log(index);
-//     }
-//     return newArray.push(index);
-//   });
-// }
-
 function arrayReplace(arr) {
-  for(let i = 0; i <arr.length; i++) {
-    if (arr[i] === 1) {
-      arr[i] = 'Beep!';
-    } else if (arr[i] === 2) {
-      arr[i] = 'Boop!';
-    } else if (arr[i] === 3) {
-      arr[i] = `Won't you be my neighbor?`;
+  let newArray = []
+  newArray = arr;
+  const arrOfStr = newArray.map(num => {
+    return String(num);
+  });
+
+  const arrReplace = arrOfStr.map(element => {
+    if (element === element.includes('1')) {
+      element = 'Beep!'
+    } else if (element === '2') {
+      element = 'Boop!';
+    } else if (element === '3') {
+      element = `Won't you be my neighbor?`;
     }
-  }
-  return arr.toString();
+    return String(element);
+  });
+  console.log(arrReplace);
+ 
+  return arrReplace.toString();
 }
 
 // UI Logic
