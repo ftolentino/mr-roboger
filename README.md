@@ -1,6 +1,10 @@
 # Mr. Roboger's Neighborhood
 Epicodus Week 3 - Independent Project
 
+## Link to website hosted on gh-pages
+
+_[Check out the website](https://ftolentino.github.io/mr-roboger/)_
+
 #### By _**Filmer Tolentino**_
 
 #### _Epicodus Week 3 - Independent Project_
@@ -51,10 +55,6 @@ _Create a web application that takes a number from the user and returns a range 
 * _git clone **repository link**, to your local machine._
 * _requires an internet connection to run (Bootstrap and jQuery are using a CDN)_
 * _open the index.html file in your browser, or run Go Live in VS Code to run the code on your local host._
-
-## Link to website hosted on gh-pages
-
-_[Check out the website](https://ftolentino.github.io/mr-roboger/)_
 
 
 ## Known Bugs
